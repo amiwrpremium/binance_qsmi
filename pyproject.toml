@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "binance-qsmi"
+version = "0.0.1"
+description = "Binance QSMI"
+authors = ["AMiWR <amiwrpremium@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-binance = "^1.0.19"
+pydantic = "^2.5.2"
+prettytable = "^3.9.0"
+typer = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
