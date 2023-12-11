@@ -6,6 +6,9 @@ authors = ["AMiWR <amiwrpremium@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
+[tool.poetry.scripts]
+binance-qsmi = "binance_qsmi.commands:app"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 python-binance = "^1.0.19"
