@@ -5,6 +5,9 @@ description = "Binance QSMI"
 authors = ["AMiWR <amiwrpremium@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "binance_qsmi", from = "src" }
+]
 
 [tool.poetry.scripts]
 binance-qsmi = "binance_qsmi.commands:app"
