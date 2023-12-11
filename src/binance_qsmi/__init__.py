@@ -10,14 +10,14 @@
 
 # License: MIT
 
-# Version: 0.0.1
+# Version: 0.0.2
 """
 
 from .app import BinanceQSMI
 
 __all__ = ["BinanceQSMI"]
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __author__ = "AMiWR"
 __license__ = "MIT"
 __email__ = "amiwrpremium@gmail.com"
