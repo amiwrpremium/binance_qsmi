@@ -12,6 +12,10 @@ from prettytable import PrettyTable
 
 
 class UserAsset(BaseModel):
+    """
+    Binance Margin User Asset Base Model
+    """
+
     asset: str = Field(
         ...,
         title="Asset",
@@ -55,7 +59,7 @@ class UserAsset(BaseModel):
         alias="netAsset",
     )
 
-    def table(self):
+    def table(self) -> PrettyTable:
         """
         PrettyTable for UserAsset
         """
@@ -77,7 +81,7 @@ class UserAsset(BaseModel):
 
 class MarginAccountInfo(BaseModel):
     """
-    Binance_Margin Account Info Base Model
+    Binance Margin Account Info Base Model
     """
 
     borrow_enabled: bool = Field(
@@ -163,7 +167,7 @@ class MarginAccountInfo(BaseModel):
         alias="userAssets",
     )
 
-    def table(self):
+    def table(self) -> PrettyTable:
         """
         PrettyTable for Balances.
 
@@ -234,7 +238,7 @@ class MarginAccountInfo(BaseModel):
 
 class MarginTrade(BaseModel):
     """
-    Binance_Margin Trade Base Model
+    Binance Margin Trade Base Model
     """
 
     symbol: str = Field(
@@ -394,7 +398,7 @@ class MarginTrade(BaseModel):
 
 class MarginTrades(BaseModel):
     """
-    Binance_Margin Trades Base Model
+    Binance Margin Trades Base Model
     """
 
     trades: List[MarginTrade] = Field(
@@ -403,7 +407,7 @@ class MarginTrades(BaseModel):
         description="Trades",
     )
 
-    def table(self, full: bool = False):
+    def table(self, full: bool = False) -> PrettyTable:
         """
         PrettyTable for MarginTrades.
 
